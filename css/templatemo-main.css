@@ -298,7 +298,7 @@ nav a:hover::before {
   background-image: url(../img/bg.jpg);
 }
 .slides .slide:nth-child(2) {
-  background-image: url(../img/bg2.jpg);
+  background-image: url(../img/bg.jpg);
 }
 .slides .slide:nth-child(3) {
   background-image: url(../img/third_bg.jpg);
