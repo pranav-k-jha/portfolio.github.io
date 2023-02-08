@@ -10,24 +10,74 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Portfolio.css">
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contactme">Contact Me</a></li>
-        </ul>
-    </nav>
-    
-    <section class="hero">
-        <div class="container">
-            <img src="images/aboutme.jpg">
-            <h1>A highly motivated and experienced data analytics/science and DevOps professional seeking a position where I can utilize my skills in query and visualization tools, proficiency in Python, experience in agile software development, and strong communication, teamwork, and problem-solving abilities to enhance product development and improve organizational efficiency.</h1>
+<style>
+    .hero {
+        background-color: whitesmoke;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.3s ease-in-out;
+    }
 
-        </div>
+    .hero:hover {
+        background-color: rgb(186, 66, 66);
+        transform: scale(1.05);
+    }
 
+    .hero img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+    }
 
-    </section>
+    .hero img:hover {
+        transform: rotate(360deg);
+    }
+
+    .hero-text {
+        background-color: rgb(239, 9, 124);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hero-text:hover {
+        transform: translateY(-10px);
+    }
+
+    .hero h1 {
+        color: wheat;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+        transition: all 0.3s ease-in-out;
+        animation: animateText 2s ease-in-out infinite;
+    }
+
+    @keyframes animateText {
+        0% {
+            transform: translateX(-50px);
+        }
+        100% {
+            transform: translateX(50px);
+        }
+    }
+
+    .hero h1:hover {
+        color: #a6b8ba;
+    }
+</style>
+<section class="hero">
+    <img src="images/aboutme.jpg">
+    <div class="hero-text">
+        <h1>A highly motivated and experienced data analytics/science and DevOps professional seeking a position where I can utilize my skills in query and visualization tools, proficiency in Python, experience in agile software development, and strong communication, teamwork, and problem-solving abilities to enhance product development and improve organizational efficiency.</h1>
+    </div>
+</section>
+
     <section id="aboutme" class="aboutme">
         <h2>About Me</h2>
         <div class="aboutme-section">
@@ -35,7 +85,7 @@
                 <div class="aboutme-image"></div>
             </div>
             <div class="aboutme-text">
-                   </p>As a highly knowledgeable and skilled graduate student in Computing Systems, Communication Systems, and Networks from Concordia University in Montreal, Canada, I have developed a passion for multiple areas of expertise. My portfolio showcases a diverse range of skills and knowledge in the fields of Data Analytics/Science, Software Development, and Cloud Services/Communication Systems/Network Technologies.
+                    </p>As a highly knowledgeable and skilled graduate student in Computing Systems, Communication Systems, and Networks from Concordia University in Montreal, Canada, I have developed a passion for multiple areas of expertise. My portfolio showcases a diverse range of skills and knowledge in the fields of Data Analytics/Science, Software Development, and Cloud Services/Communication Systems/Network Technologies.
                     <br><br>
                     In the field of Data Analytics/Science, I have gained a solid understanding of various tools and technologies, such as SQL, Tableau, Excel, Python, and Machine Learning. These skills allow me to analyze and interpret large data sets, construct predictive models, and make informed business decisions.
                     <br><br>
@@ -44,6 +94,7 @@
                     In the area of Cloud Services/Communication Systems/Network Technologies, I am knowledgeable in TCP/IP protocols, Routing protocols, Python, technical support, AWS, and Oracle Cloud. These skills have enabled me to manage cloud infrastructure and communication systems efficiently and securely, ensuring smooth data transmission.
                     <br><br>
                     In conclusion, my portfolio highlights my capacity to effectively utilize my knowledge and skills to meet the demands of businesses, organizations, and individuals.</p>
+                        
             </div>
         </div>
     </section>
