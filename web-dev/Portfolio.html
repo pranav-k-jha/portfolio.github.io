@@ -107,6 +107,43 @@
     visibility: visible;
     transform: scaleX(1);
   }
+  .education {
+    padding: 80px 0;
+    background-color: lightgray;
+  }
+
+  .education .container {
+    max-width: 2000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .education h3 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .education-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .education-item {
+    width: 400px;
+    margin: 40px;
+    text-align: left;
+  }
+
+  .education-item h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .education-item p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 </style>
 <script>
     const links = document.querySelectorAll("nav ul li a");
@@ -128,6 +165,7 @@
         <ul>
             <li><a href="#aboutme">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#Education">Education</a></li>
             <li><a href="#contactme">Contact Me</a></li>
         </ul>
     </nav>
@@ -205,7 +243,6 @@
                 <label for="email">Email Address</label>
                 <input type="email" id="email" placeholder="Your email address">
 
-                
             </div>
 
 
@@ -219,6 +256,27 @@
 
 
     </section>
+    <section id="education" class="education">
+        <div class="container">
+          <h2>Education</h2>
+          <div class="education-content">
+            <div class="education-item">
+              <h2>Concordia University</h2>
+              <p><strong>Doctor of Philosophy (PhD), MEng </strong><br> Department of Electrical and Computer Engineering<br> Expected - April 2023</p>
+            </div>
+            <div class="education-item">
+              <h2>National Institute of Technology, Trichy</h2>
+              <p><strong>Master of Science (MS) by Research</strong><br> Department of Electronics and Communication Engineering<br> Feb 2016 - May 2018</p>
+            </div>
+            <div class="education-item">
+              <h2>WEST BENGAL UNIVERSITY OF TECHNOLOGY</h2>
+              <p><strong>Bachelor of Technology (BTech)</strong><br> Electronics and Communication Engineering <br> Aug 2008 - Jun 2012</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
 
     <footer>
 
@@ -238,4 +296,3 @@
     </footer>
 
 </body>
-</html>
